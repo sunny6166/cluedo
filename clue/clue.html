@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./clue.js"></script>
+</head>
+<body>
+    
+    <div class="character-container who">
+        <h1>Who did it?</h1>
+    </div>
+
+    <div class="weapon-container who">
+        <h1>With what?</h1>
+    </div>
+
+    <div class="room-container who">
+        <h1>Where?</h1>
+    </div>
+
+    <div class="reveal-container who">
+        <h1>Who did it, with what and where?</h1>
+    </div>
+
+    <style>
+        .character-container h1 {
+            width: 100%;
+        }
+        .character-container {
+            flex-wrap: wrap;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+        }
+
+        .character-container img {
+            padding: 5%;
+            border: 20px solid black;
+            max-width: 25%;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 15px;
+        }
+        .character-container h1 {
+            width: 100%;
+        } 
+
+        .weapon-container  {
+            display: none;
+        }
+        .weapon-container button, .room-container button {
+            width: 200px;
+            height: 500px;
+            font-size: 20px;
+            margin:5px;
+        }
+        .room-container  {
+            display: none;
+        }
+        .reveal-container > * {
+            width: 33%;
+        }
+        .reveal-container h1 {
+            width: 100%;
+        }
+        .reveal-container h2  {
+            text-align: center;
+        }
+        .reveal-container  {
+            display: none;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    </style>
+</body>
+</html>
